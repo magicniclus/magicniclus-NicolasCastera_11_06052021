@@ -1,0 +1,30 @@
+@mixin tags {
+    .tagContainer{
+        margin-top: 1rem;
+        display: flex;
+        .tag{
+            background-color: $color-un;
+            width: 115px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            color: white;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+
+            span{
+                width: 80%;
+                text-align: center;
+                white-space : nowrap;
+                overflow : hidden;
+                -o-text-overflow : ellipsis;
+                text-overflow :    ellipsis;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+    }
+}

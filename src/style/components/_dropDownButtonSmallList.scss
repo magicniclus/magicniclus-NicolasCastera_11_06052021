@@ -1,0 +1,56 @@
+@mixin dropDownButtonSmallList {
+    .dropDownBtnSmallList{
+        width: 47%;
+        border-radius: 20px; 
+
+        @media screen and (max-width: 650px) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        button{
+            width: 100%;
+            border: 0;
+            background-color: $color-un;
+            height: 52px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            span{
+                color: white;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 18px;
+                margin-left: 1rem;
+            }
+
+            i{
+                color: white;
+                font-size: 25px;
+                margin-right: 1rem;
+            }
+        }
+
+        .dropDownBtnSmallList_buttom{
+            padding-top: 2rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            margin: 0;
+            background-color: $color-deux;
+            border-radius: 0 0 10px 10px;
+
+            li{
+                color: $color-un;
+                text-decoration: none;
+                list-style: none;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }  
+}

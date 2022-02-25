@@ -1,0 +1,108 @@
+@import '../components/dropDownButton';
+@import '../components/dropDownButtonSmallList';
+@import '../components/starRating';
+@import '../components/tag';
+
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+    .ligthBox{
+        @include lightBox;
+        flex-wrap: wrap;
+    }
+
+    .ficheLogement_globalContainer{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .ficheLogement_container_left{
+            width: 70%;
+
+            h1{
+                font-weight: 500;
+                font-style: normal;
+                font-size: 36px;
+                color: $color-un;
+                margin: 0;
+
+                @media screen and (max-width : 600px){
+                    font-size: 18px;
+                }
+            }
+
+            .city{
+                font-weight: 500;
+                font-size: 18px;
+                color: $color-un;
+
+                @media screen and (max-width : 600px){
+                    font-size: 14px;
+                }
+            }
+
+            @include tags;
+
+            @media screen and (max-width : 600px){
+                width: 100%;
+            }
+        }
+
+        .ficheLogement_container_right{
+            width: 30%;
+
+            @media screen and (max-width : 600px){
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+
+            .ficheLogement_container_right_host{
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                .ficheLogement_container_right_host_name{
+                    width: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        margin-right: 2rem;
+                        color: $color-un;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: end;
+
+                        @media screen and (max-width: 450px) {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+
+                img{
+                    width: 64px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+
+            @include starRating;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            display: flex;
+            width: 100%;
+            @include dropDownButtonSmall;
+            @include dropDownButtonSmallList;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@mixin starRating {
+    .starContainer{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .fas{
+            font-size: 30px;
+            width: 2.5rem;
+
+            @media screen and (max-width : 600px){
+                font-size: 14px;
+                width: 1.5rem;
+            }
+        }
+
+        .check{
+            color: $color-un;
+        }
+
+        .uncheck{
+            color: $color-deux;
+        }
+    }
+}
