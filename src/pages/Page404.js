@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import { NavLink } from 'react-router-dom';
-import Footer from '../components/Footer';
 
 export default class Page404 extends Component{
 

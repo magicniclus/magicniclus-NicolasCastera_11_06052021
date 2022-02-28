@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { getList } from '../services/dataManager';
 import Card from '../components/Card';
 import Header from '../components/Header';
-import Footer from '../components/Footer'
 
 export default class Home extends Component {
     /**

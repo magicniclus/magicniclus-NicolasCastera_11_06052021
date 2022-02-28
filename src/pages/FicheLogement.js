@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from "react-router-dom";
-import DropDownBtnSmall from '../components/DropDownBtnSmall';
-import DropDownBtnSmallList from '../components/DropDownBtnSmallList';
-import Footer from '../components/Footer';
+import DropDownBtn from '../components/DropDownBtn';
 import Header from '../components/Header';
 import LightBox from '../components/LightBox';
 import StarRating from '../components/StarRating';
@@ -52,8 +50,8 @@ export default class FicheLogement extends Component {
                             <StarRating stars={this.appart.rating} />
                         </section>
                         <section className='btn'>
-                            <DropDownBtnSmall title='Description' text={this.appart.description} />
-                            <DropDownBtnSmallList title='Équipement' text={this.appart.equipment} />
+                            <DropDownBtn title='Description' text={this.appart.description} name="dropDownBtnSmall" />
+                            <DropDownBtn title='Équipement' text={this.appart.equipment} name='dropDownBtnSmallList' />
                         </section>
                     </div>
                 </main>
