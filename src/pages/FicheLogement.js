@@ -57,7 +57,6 @@ export default class FicheLogement extends Component {
                         </section>
                     </div>
                 </main>
-                <Footer />
             </div>
         );
     }

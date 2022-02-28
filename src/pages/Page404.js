@@ -16,7 +16,6 @@ export default class Page404 extends Component{
                     Retourner sur la page d'accueil
                 </NavLink>
             </div>
-            {/* <Footer /> */}
         </div>
     );
     }
